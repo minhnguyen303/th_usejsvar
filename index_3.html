@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+
+<button onclick="myFunction()">Tìm bội số</button>
+
+<script>
+    function myFunction() {
+        var kq;
+        var a = prompt("Nhập số a:");
+        var b = prompt("Nhập số b:");
+
+        if (!isNaN(a) && !isNaN(b) || (a == null || a == "" || b == null || b == "")) {
+            var result = a % b;
+            if (result != 0) {
+                kq = "Kết quả: a không phải là bội số của b.";
+            } else {
+                kq = "Kết quả: a là bội số của b.";
+            }
+        }
+        else {
+            kq = "Đầu vào cần là một số!"
+        }
+
+        alert(kq);
+    }
+</script>
+</body>
+</html>
